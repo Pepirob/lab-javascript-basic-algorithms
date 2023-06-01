@@ -87,3 +87,23 @@ function wordsCounter(text, word) {
 const countedWords = wordsCounter(longText, "et");
 
 console.log(countedWords);
+
+// bonus 2
+
+function isPalindrome(string) {
+  let isIt = true;
+  let stringLowCase = string.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+  console.log(stringLowCase.split("").reverse().join(""));
+  for (let i = 0; i < stringLowCase.length; i++) {
+    if (stringLowCase[i] !== stringLowCase[stringLowCase.length - 1 - i]) {
+      isIt = false;
+    } else {
+      isIt = true;
+    }
+  }
+  return isIt;
+}
+
+const isItActuallyAPalindrome = isPalindrome("A man, a plan, a canal, Panama!");
+
+console.log(isItActuallyAPalindrome);
