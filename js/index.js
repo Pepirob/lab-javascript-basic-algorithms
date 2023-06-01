@@ -37,3 +37,12 @@ function upperSeparate(string) {
 }
 
 upperSeparate(hacker1);
+
+// 3.2
+
+function reverseString(string) {
+  const upperCaseStr = string.slice(0, 1).toUpperCase() + string.slice(1);
+  console.log(upperCaseStr.split("").reverse().join(""));
+}
+
+reverseString(hacker2);
