@@ -1,10 +1,10 @@
 // Iteration 1: Names and Input
 
-const hacker1 = "ppluis";
+const hacker1 = "joselu";
 
 console.log(`The driver's name is ${hacker1}`);
 
-const hacker2 = "morse";
+const hacker2 = "joselu";
 
 console.log(`The navigator's name is ${hacker2}`);
 
@@ -46,3 +46,13 @@ function reverseString(string) {
 }
 
 reverseString(hacker2);
+
+// 3.3
+
+if (hacker1.localeCompare(hacker2) === -1) {
+  console.log("The driver's name goes first.");
+} else if (hacker1.localeCompare(hacker2) === 1) {
+  console.log("Yo, the navigator goes first definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+}
