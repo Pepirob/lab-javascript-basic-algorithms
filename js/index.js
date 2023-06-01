@@ -23,3 +23,17 @@ if (hacker1.length > hacker2.length) {
     `Wow, you both have equally long names, ${hacker1.length} characters`
   );
 }
+
+// Iteration 3: Loops
+
+// 3.1
+
+function upperSeparate(string) {
+  let driverCapitalSpaced = "";
+  for (let i = 0; i < string.length; i++) {
+    driverCapitalSpaced += string[i] + " ";
+  }
+  console.log(driverCapitalSpaced.toUpperCase());
+}
+
+upperSeparate(hacker1);
